@@ -1,15 +1,13 @@
 package repository;
 
 import domain.Student;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
 import validation.StudentValidator;
-import validation.ValidationException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class StudentRepositoryTest {
+public class StudentRepositoryTest {
     StudentRepository studentRepo = new StudentRepository(new StudentValidator());
 
     @Test
@@ -105,18 +103,4 @@ class StudentRepositoryTest {
         assertNull(studentRepo.save(student));
         assertTrue(studentRepo.entities.containsKey("id"));
     }
-
-    //id-null
-    //id-empty
-    //id-not empty
-
-    //nume-null
-    //nume-empty
-    //nume-not empty
-
-    //grupa-109,110,111
-    //grupa-937,938,939
-
-
-
 }
