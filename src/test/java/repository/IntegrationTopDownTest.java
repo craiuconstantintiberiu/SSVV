@@ -12,7 +12,7 @@ import validation.TemaValidator;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-public class IntegrationTopDown {
+public class IntegrationTopDownTest {
 
     NotaRepository notaRepository = new NotaRepository(new NotaValidator());
     TemaRepository temaRepository = new TemaRepository(new TemaValidator());
